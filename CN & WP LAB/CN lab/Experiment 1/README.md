@@ -8,5 +8,5 @@
 
 3.print the total data recived , frame data with and without header from reciver side.
 
-###output:
+### Output :
 ![output](charCount.png)
