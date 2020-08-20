@@ -6,4 +6,4 @@
 2.
 3.
 ###output:
-![output](charCount.jpg)
+![output](charCount.png)
