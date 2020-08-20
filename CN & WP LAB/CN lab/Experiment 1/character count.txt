@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+        int no_frames,i;
+        printf("enter number of frames : ");
+        scanf("%d",&no_frames);
+        char allFrameData[no_frames][50];
+        int frameLength[no_frames],j;
+        for(i=0;i<no_frames;i++){
+                printf("frame %d : ",i+1);
+                scanf("%s",allFrameData[i]);
+                frameLength[i] = strlen(allFrameData[i])+1;
+        }
+        printf("AT THE SENDER\n");
+        printf("Data as frames :\n");
+        for(i=0;i<no_frames;i++){
+                printf("frame %d :%d%s\n",i+1,frameLength[i],allFrameData[i]);
+        }
+        printf("Data transmitted :");
+        for(i=0;i<no_frames;i++){
+                printf("%d%s",frameLength[i],allFrameData[i]);
+        }
+        printf("\nAT THE RECIEVER");
+        printf("\nThe data recieved\n");
+        for(i=0;i<no_frames;i++){                                                                                                                                                                                                  printf("%d%s",frameLength[i],allFrameData[i]);                                                                                                                                                             }
+        printf("\nthe data after removing count char : ");
+        for(i=0;i<no_frames;i++){
+                printf("%s ",allFrameData[i]);
+        }
+        printf("\nthe data in frame form:\n");
+        for(i=0;i<no_frames;i++){
+                printf("frame %d :%s\n",i+1,allFrameData[i]);
+        }
+        return 0;
+}
