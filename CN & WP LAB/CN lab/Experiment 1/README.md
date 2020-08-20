@@ -1,6 +1,6 @@
 # experiment 1
 ## AIM : 
- Character count
+To impliment data link layer framing techniques such as i.character count ii. character stuffing and iii. bit stuffing
 ## procedure:
 1.Taking input of number of frames and asking to enter the frames data. 
 
