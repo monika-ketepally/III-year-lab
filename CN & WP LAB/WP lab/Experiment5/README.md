@@ -1,3 +1,3 @@
 
 ### Output :
-![output](bitStuffing.png)
+![output](REGISTER.png)
