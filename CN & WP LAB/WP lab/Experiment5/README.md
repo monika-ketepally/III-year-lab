@@ -1,1 +1,3 @@
 
+### Output :
+![output](bitStuffing.png)
