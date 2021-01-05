@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    int keylen,msglen,i,j;
+    char data[100],data1[100],k[100],k1[100],temp[100],Quot[100],Rem[100];
+    printf("Enter data:");
+    scanf("%s",data);
+    strcpy(data1,data);
+    printf("Enter the Polynomial:");
+    scanf("%s",k);
+    msglen = strlen(data);
+    keylen = strlen(k);
+    strcpy(k1,k);
+    for(i=1;i<keylen;i++){
+    strcat(data,"0");
+    }
+    printf("String after adding zeroes:%s\n",data);
+    for (i=0;i<keylen;i++){
+            temp[i]=data[i];
+    }
+    for(i=0;i<msglen;i++) {
+    Quot[i]=temp[0];
+    if(Quot[i]=='0'){
+        for (j=0;j<keylen;j++)
+          k[j]='0';
+    }
+	else{
+        for (j=0;j<keylen;j++)
+		 k[j]=k1[j];
+    }
+    for(j=keylen-1;j>0;j--) {
+        if(temp[j]==k[j]){
+            Rem[j-1]='0';
+        }
+	else{
+            Rem[j-1]='1';
+        }
+    }
+		Rem[keylen-1]=data[i+keylen];
+		strcpy(temp,Rem);
+}
+	strcpy(Rem,temp);
+    Quot[msglen] = '\0';
+    Rem[keylen-1] = '\0';
+
+	printf("Quotient:%s\n",Quot);
+	printf("Remainder:%s\n",Rem);
+	printf("Data received at receiver side:");
+	strcat(data1,Rem);
+	printf("%s",data1);
+	printf("\n");
+
+return 0; 
+}
