@@ -41,4 +41,4 @@ distance[w]+cost[w][v])
 
 ## Output
 
-![output](dijsktra.png)
+![output](dijkstra.png)
