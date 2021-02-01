@@ -1,4 +1,4 @@
-# Experimet 12
+# Experiment 12
 ## Aim of the Experiment
 How to detect Operating System using Nmap
 
