@@ -3,7 +3,7 @@
 ## Aim
 A program for congestion control using Leaky bucket algorithm.
 
-### steps or procedure to be followed:
+### Steps or procedure to be followed:
 
-## output
+## Output
 ![output](leakyBucket.png)
