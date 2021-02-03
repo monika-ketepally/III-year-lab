@@ -25,4 +25,5 @@ Receiver assumes that no error occurred in the data during the transmission. 2.R
 ##### If the remainder is non-zero-
 Receiver assumes that some error occurred in the data during the transmission. 2.Receiver rejects the data and asks the sender for retransmission.
 
+## Output
 ![output](crc.png)
