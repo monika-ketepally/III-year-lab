@@ -1,4 +1,4 @@
-# experiment 1
+# Experiment 1
 ## AIM : 
 To impliment data link layer framing techniques such as bit stuffing.
 ## procedure:
