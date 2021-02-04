@@ -1,5 +1,7 @@
-//go gack n arq                                                                                                                                                                                                                                                                                                                                                                                                                       #include<stdio.h>                                                                                                                                                                                                  int main(){
-        int wSize,i,j=0;
+//go gack n arq   
+#include<stdio.h>  
+int main(){
+	int wSize,i,j=0;
 	printf("enter window size : ");
         scanf("%d",&wSize);
         while(1){
@@ -9,8 +11,9 @@
 		printf("\nenter last transmitted frame : \n");
 		scanf("%d",&j);
                 if(j==wSize-1){
-                     break;                                                                                                                                                                                                     }                                                                                                                                                                                                          
-		}
+                     break;    
+		}                                                                                                                                                                                                          
+	}
         printf("\nAll frames transmitted\n");
 
         return 0;
