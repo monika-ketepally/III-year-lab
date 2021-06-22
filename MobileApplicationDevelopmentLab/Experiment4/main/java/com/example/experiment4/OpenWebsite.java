@@ -21,8 +21,8 @@ public class OpenWebsite extends AppCompatActivity {
         b.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url="www.google.com";
-                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                Intent intent=new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://103.241.136.97/"));
                 startActivity(intent);
             }
         });
